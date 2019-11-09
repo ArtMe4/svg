@@ -1,0 +1,34 @@
+*{
+  margin: 20px;
+}
+
+#Layer_1 {
+  width: 230px;
+}
+
+#spoiler {
+  animation: color 3s infinite;
+}
+
+@keyframes right {
+  from {transform: translateX(0);}
+  to {transform: translateX(1000px);}
+}
+
+@keyframes left {
+  from {transform: translateX(1000px);}
+  to {transform: translateX(0);}
+}
+
+@keyframes color {
+  from {transform: translateX(0);fill: #FF6464}
+  25% {transform: translateX(-7px);fill: orange}
+  75% {transform: translateX(7px);}
+  to {transform: translateX(0);fill: #FF6464}
+}
+
+#changeL:hover,
+#changeR:hover {
+  cursor: pointer;
+  fill: green;
+}
